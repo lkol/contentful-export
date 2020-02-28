@@ -1,5 +1,5 @@
 {
-  "name": "contentful-export",
+  "name": "contentful-export-with-cda-support",
   "version": "0.0.0-determined-by-semantic-release",
   "description": "this tool allows you to export a space to a JSON dump",
   "main": "dist/index.js",
