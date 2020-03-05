@@ -30,7 +30,8 @@ function initClient(opts, useCda = false) {
       accessToken: config.cdaAccessToken,
       environment: config.environmentId,
       host: config.includeDrafts ? 'preview.contentful.com' : 'cdn.contentful.com',
-      resolveLinks: false
+      resolveLinks: false,
+      retryLimit: 20
     };
     return (0, _contentful.createClient)(cdaConfig);
   }
