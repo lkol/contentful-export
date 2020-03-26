@@ -36,6 +36,7 @@ function getFullSourceSpace({
   spaceId,
   environmentId = 'master',
   skipContentModel,
+  skipEditorInterfaces,
   skipContent,
   skipWebhooks,
   skipRoles,
@@ -78,7 +79,7 @@ function getFullSourceSpace({
         });
       });
     }),
-    skip: ctx => skipContentModel || ctx.data.contentTypes.length === 0 && 'Skipped since no content types downloaded'
+    skip: ctx => skipEditorInterfaces || skipContentModel || ctx.data.contentTypes.length === 0 && 'Skipped since no content types downloaded'
   }, {
     title: 'Fetching content entries data',
     task: (0, _listr3.wrapTask)((ctx, task) => {

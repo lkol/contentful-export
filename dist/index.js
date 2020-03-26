@@ -114,6 +114,7 @@ function runContentfulExport(params) {
         includeDrafts: options.includeDrafts,
         includeArchived: options.includeArchived,
         skipContentModel: options.skipContentModel,
+        skipEditorInterfaces: options.skipEditorInterfaces,
         skipContent: options.skipContent,
         skipWebhooks: options.skipWebhooks,
         skipRoles: options.skipRoles,

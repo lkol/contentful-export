@@ -32,6 +32,7 @@ function parseOptions(params) {
     includeArchived: false,
     skipRoles: false,
     skipContentModel: false,
+    skipEditorInterfaces: false,
     skipContent: false,
     skipWebhooks: false,
     maxAllowedLimit: 1000,
